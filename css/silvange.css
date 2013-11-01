@@ -1,0 +1,188 @@
+/*
+    Silver and Orange
+
+    #242424 - off black
+    #FEFEFE - off white
+    #E18A07 - orange
+    #C0C0C0 - silver
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two:700italic,400italic);
+
+body,
+html {
+    background: #C0C0C0;
+    color: #242424;
+    font-family: 'Arvo', serif;
+    font-size: 1em;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    background: #FEFEFE;
+    border-left: 1px solid #E18A07;
+    border-right: 1px solid #E18A07;
+    margin:0 auto -26px;
+    max-width: 2700px;
+    min-height: 100%;
+    min-width: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 80vw;
+}
+
+header {
+    margin: 0 auto;
+}
+
+header h1 {
+    color: #E18A07;
+    font: italic 700 3.5em 'Lobster Two', cursive;
+    margin: 0 0 10px 16px;
+    text-shadow: 1px 1px grey;
+}
+
+header h2 {
+    color: #fefefe;
+    font: normal small-caps 400 1.25em 'Arvo', serif;
+    margin: 0 0 -23px 16px;
+}
+
+nav {
+    background: #E18A07;
+    background-image: linear-gradient(bottom, #D49F51 8%, #E18A07 54%);
+    background-image: -o-linear-gradient(bottom, #D49F51 8%, #E18A07 54%);
+    background-image: -moz-linear-gradient(bottom, #D49F51 8%, #E18A07 54%);
+    background-image: -webkit-linear-gradient(bottom, #D49F51 8%, #E18A07 54%);
+    background-image: -ms-linear-gradient(bottom, #D49F51 8%, #E18A07 54%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.08, #D49F51), color-stop(0.54, #E18A07));
+    color: #FEFEFE;
+    padding:5px 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav li {
+    border-right: 1px solid #FEFEFE;
+    display: inline;
+    margin: 0;
+    padding: 0 9px;
+    line-height: 40px;
+}
+
+nav li:last-child {
+    border: none;
+}
+
+nav li a:link {
+    color: #FEFEFE;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #242424;
+    
+}
+
+section {
+    margin: 0 auto 26px;
+    padding: 10px 2vw;
+    min-width: 180px;
+    line-height: 1.25;
+    text-align: justify;
+}
+
+section h2 {
+    color: #E18A07;
+    font: italic 700 1.5em 'Lobster Two', cursive;
+    margin: 1em 0 0 0;
+}
+
+section a:link {
+    color: #E18A07;
+    text-decoration: none;
+}
+
+section a:hover {
+    color: #c50;
+    text-decoration: underline;
+}
+
+footer {
+    background-image: linear-gradient(bottom, #D49F51 92%, #E18A07 54%);
+    background-image: -o-linear-gradient(bottom, #D49F51 92%, #E18A07 54%);
+    background-image: -moz-linear-gradient(bottom, #D49F51 92%, #E18A07 54%);
+    background-image: -webkit-linear-gradient(bottom, #D49F51 92%, #E18A07 54%);
+    background-image: -ms-linear-gradient(bottom, #D49F51 92%, #E18A07 54%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.92, #D49F51), color-stop(0.54, #E18A07));
+    clear: both;
+    height: 16px;
+    margin: -26px auto 0;
+    padding: 5px 0;
+    min-width: 180px;
+    width: 80vw;
+}
+
+footer p {
+    margin: 0 0 0 10px;
+}
+
+/* Single column for anything less than ~896px */
+/* For two columns, between ~896px and ~1600px */
+@media all and (min-width: 56em) and (max-width: 100em) {
+    section {
+        float: left;
+        padding: 10px 2vw 10px 1vw;
+        width: 37vw;
+    }
+
+    section:nth-child(even) {
+        clear: both;
+        padding: 10px 1vw 10px 2vw;
+    }
+}
+
+/* For three columns, between ~1600px and a lot of px */
+@media all and (min-width: 100.1em) and (max-width: 143em) {
+    section {
+        float: left;
+        padding: 10px 0.9166vw;
+        width: 24.2222vw;
+    }
+    
+    section:nth-child(3n-1) {
+        clear: both;
+        padding: 10px 0.9167vw 10px 1.8333vw;
+    }
+    
+    section:nth-child(3n+1) {
+        padding: 10px 1.8333vw 10px 0.9167vw;
+    }
+}
+
+/* For four columns, over a lot of px */
+@media all and (min-width: 143.1em) {
+    section {
+        float: left;
+        max-width: 625px;
+        padding: 10px 0.375vw;
+        width: 19.0625vw;
+    }
+    section:nth-child(4n-2) {
+        clear: both;
+        padding: 10px 0.375vw 10px 0.75vw;
+    }
+    
+    section:nth-child(4n+1) {
+        padding: 10px 0.75vw 10px 0.375vw;
+    }
+}
