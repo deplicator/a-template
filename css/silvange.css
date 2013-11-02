@@ -1,21 +1,23 @@
 /*
-    Silver and Orange
+    Silver and Orange Stylesheet
 
-    #242424 - off black
-    #FEFEFE - off white
-    #E18A07 - orange
-    #C0C0C0 - silver
+    colors used in this theme
+    silver       #C0C0C0     body background and image borders
+    off black    #242424     All the black on the page.
+    off white    #FEFEFE     All the white on the page.
+    orange       #E18A07     Navigation, footers, headings, links.
+    burnt orange #CC5500     hover over links
+
 */
-
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
 @import url(http://fonts.googleapis.com/css?family=Lobster+Two:700italic,400italic);
+@import url(http://fonts.googleapis.com/css?family=Habibi);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800,300);
 
 body,
 html {
     background: #C0C0C0;
     color: #242424;
-    font-family: 'Arvo', serif;
-    font-size: 1em;
+    font: normal 400 1em 'Habibi', serif;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -23,8 +25,8 @@ html {
 
 #wrap {
     background: #FEFEFE;
-    border-left: 1px solid #E18A07;
-    border-right: 1px solid #E18A07;
+    border-left: 1px solid #242424;
+    border-right: 1px solid #242424;
     margin:0 auto -26px;
     max-width: 2700px;
     min-height: 100%;
@@ -34,6 +36,8 @@ html {
     width: 80vw;
 }
 
+
+/*** Header and Navigation ***/
 header {
     margin: 0 auto;
 }
@@ -42,12 +46,12 @@ header h1 {
     color: #E18A07;
     font: italic 700 3.5em 'Lobster Two', cursive;
     margin: 0 0 10px 16px;
-    text-shadow: 1px 1px grey;
+    text-shadow: 1px 1px #C0C0C0;
 }
 
 header h2 {
     color: #fefefe;
-    font: normal small-caps 400 1.25em 'Arvo', serif;
+    font: normal small-caps 300 1.25em 'Open Sans', sans-serif;
     margin: 0 0 -23px 16px;
 }
 
@@ -60,6 +64,7 @@ nav {
     background-image: -ms-linear-gradient(bottom, #D49F51 8%, #E18A07 54%);
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.08, #D49F51), color-stop(0.54, #E18A07));
     color: #FEFEFE;
+    font: normal 800 1em 'Open Sans', sans-serif;
     padding:5px 10px;
 }
 
@@ -71,7 +76,7 @@ nav ul {
 }
 
 nav li {
-    border-right: 1px solid #FEFEFE;
+    border-right: 1px solid #242424;
     display: inline;
     margin: 0;
     padding: 0 9px;
@@ -84,15 +89,19 @@ nav li:last-child {
 
 nav li a:link {
     color: #FEFEFE;
-    font-weight: 700;
     text-decoration: none;
+}
+
+nav li a:visited {
+    color: #FEFEFE;
 }
 
 nav li a:hover {
     color: #242424;
-    
 }
 
+
+/*** Sections ***/
 section {
     margin: 0 auto 26px;
     padding: 10px 2vw;
@@ -107,16 +116,53 @@ section h2 {
     margin: 1em 0 0 0;
 }
 
-section a:link {
+section a:link,
+section span {
     color: #E18A07;
+    cursor: hand;
+    cursor: pointer;
     text-decoration: none;
 }
 
-section a:hover {
+section a:visited {
+    color: #E18A07;
+}
+
+section a:hover,
+section span:hover {
     color: #c50;
     text-decoration: underline;
 }
 
+section img {
+    border: 1px solid #C0C0C0;
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    width: 70vw;
+}
+
+section #contact a:link {
+    border-radius: 4px;
+    color: #242424;
+    font-size: 2em;
+    padding: 2px;
+    margin: 0 3px;
+}
+
+section #contact a:visited {
+    color: #242424;
+    text-decoration: none;
+}
+
+section #contact a:hover {
+    background: #E18A07;
+    color: #EFEFEF;
+    text-decoration: none;
+}
+
+
+/*** Footer ***/
 footer {
     background-image: linear-gradient(bottom, #D49F51 92%, #E18A07 54%);
     background-image: -o-linear-gradient(bottom, #D49F51 92%, #E18A07 54%);
@@ -134,55 +180,4 @@ footer {
 
 footer p {
     margin: 0 0 0 10px;
-}
-
-/* Single column for anything less than ~896px */
-/* For two columns, between ~896px and ~1600px */
-@media all and (min-width: 56em) and (max-width: 100em) {
-    section {
-        float: left;
-        padding: 10px 2vw 10px 1vw;
-        width: 37vw;
-    }
-
-    section:nth-child(even) {
-        clear: both;
-        padding: 10px 1vw 10px 2vw;
-    }
-}
-
-/* For three columns, between ~1600px and a lot of px */
-@media all and (min-width: 100.1em) and (max-width: 143em) {
-    section {
-        float: left;
-        padding: 10px 0.9166vw;
-        width: 24.2222vw;
-    }
-    
-    section:nth-child(3n-1) {
-        clear: both;
-        padding: 10px 0.9167vw 10px 1.8333vw;
-    }
-    
-    section:nth-child(3n+1) {
-        padding: 10px 1.8333vw 10px 0.9167vw;
-    }
-}
-
-/* For four columns, over a lot of px */
-@media all and (min-width: 143.1em) {
-    section {
-        float: left;
-        max-width: 625px;
-        padding: 10px 0.375vw;
-        width: 19.0625vw;
-    }
-    section:nth-child(4n-2) {
-        clear: both;
-        padding: 10px 0.375vw 10px 0.75vw;
-    }
-    
-    section:nth-child(4n+1) {
-        padding: 10px 0.75vw 10px 0.375vw;
-    }
 }

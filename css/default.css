@@ -1,7 +1,15 @@
 /*
-    Default
+    Default Stylesheet
+    
+    colors used in this theme
+    light gray      #EFEFEF     body background
+    almost black    #333333     All the black on the page.
+    off white       #FEFEFE     All the white on the page.
+    less light gray #B9B9B9     image borders (light gray was too light)
+    yellow          #E9D818     menu item hover over
+    light blue      #5366F3     visited and unvisited links
+    lighter blue    #A5ADEB     hover over links
 */
-
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
 @import url(http://fonts.googleapis.com/css?family=Lobster+Two:700italic,400italic);
 
@@ -9,31 +17,10 @@ body,
 html {
     background: #efefef;
     color: #222;
-    font-family: 'Arvo', serif;
-    font-size: 1em;
+    font-family: normal 400 1em 'Arvo', serif;
     height: 100%;
     margin: 0;
     padding: 0;
-}
-
-h1 {
-    font: italic 700 2em 'Lobster Two', cursive;
-    margin: 0;
-}
-
-h2 {
-    font: italic 400 1.5em 'Lobster Two', cursive;
-    margin: 0 0 1em;
-}
-
-a:link {
-    color: #5366F3;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #A5ADEB;
-    text-decoration: underline;
 }
 
 #wrap {
@@ -49,12 +36,16 @@ a:hover {
     width: 80vw;
 }
 
+
+/*** Header and Navigation ***/
 header {
     margin: 0 auto;
 }
 
 header h1 {
+    font: italic 700 2em 'Lobster Two', cursive;
     margin: 0 0 0 16px;
+    text-shadow: 1px 1px #B9B9B9;
 }
 
 header h2 {
@@ -64,7 +55,7 @@ header h2 {
 
 nav {
     background: #333;
-    color: white;
+    color: #FEFEFE;
     padding:5px 10px;
 }
 
@@ -87,19 +78,80 @@ nav li:last-child {
 
 nav li a:link {
     color: #fefefe;
-}
-
-nav li a:hover {
-    color: #FFF580;
     text-decoration: none;
 }
 
+nav li a:visited {
+    color: #fefefe;
+}
+
+nav li a:hover {
+    color: #E9D818;
+}
+
+
+/*** Sections ***/
 section {
     margin: 0 auto 26px;
     padding: 10px 2vw;
     min-width: 180px;
 }
 
+section h2 {
+    font: italic 400 1.5em 'Lobster Two', cursive;
+    margin: 1em 0 0 0;
+}
+
+section a:link,
+section span {
+    color: #5366F3;
+    cursor: hand;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+section a:visited {
+    color: #5366F3;
+    cursor: hand;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+section a:hover,
+section span:hover {
+    color: #A5ADEB;
+    text-decoration: underline;
+}
+
+section img {
+    border: 1px solid #B9B9B9;
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    width: 70vw;
+}
+
+section #contact a:link {
+    border-radius: 4px;
+    color: #222;
+    font-size: 2em;
+    padding: 2px;
+    margin: 0 3px;
+}
+
+section #contact a:visited {
+    color: #222;
+    text-decoration: none;
+}
+
+section #contact a:hover {
+    background: #222;
+    color: #EFEFEF;
+    text-decoration: none;
+}
+
+
+/*** Footer ***/
 footer {
     border-top: 1px dashed;
     clear: both;
@@ -112,55 +164,4 @@ footer {
 
 footer p {
     margin: 0 0 0 10px;
-}
-
-/* Single column for anything less than ~896px */
-/* For two columns, between ~896px and ~1600px */
-@media all and (min-width: 56em) and (max-width: 100em) {
-    section {
-        float: left;
-        padding: 10px 2vw 10px 1vw;
-        width: 37vw;
-    }
-
-    section:nth-child(even) {
-        clear: both;
-        padding: 10px 1vw 10px 2vw;
-    }
-}
-
-/* For three columns, between ~1600px and a lot of px */
-@media all and (min-width: 100.1em) and (max-width: 143em) {
-    section {
-        float: left;
-        padding: 10px 0.9166vw;
-        width: 24.2222vw;
-    }
-    
-    section:nth-child(3n-1) {
-        clear: both;
-        padding: 10px 0.9167vw 10px 1.8333vw;
-    }
-    
-    section:nth-child(3n+1) {
-        padding: 10px 1.8333vw 10px 0.9167vw;
-    }
-}
-
-/* For four columns, over a lot of px */
-@media all and (min-width: 143.1em) {
-    section {
-        float: left;
-        max-width: 625px;
-        padding: 10px 0.375vw;
-        width: 19.0625vw;
-    }
-    section:nth-child(4n-2) {
-        clear: both;
-        padding: 10px 0.375vw 10px 0.75vw;
-    }
-    
-    section:nth-child(4n+1) {
-        padding: 10px 0.75vw 10px 0.375vw;
-    }
 }

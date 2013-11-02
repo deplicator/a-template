@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="css/default.css" />
+    <link rel="stylesheet" href="css/default.css" id="stylesheet" />
+    <link rel="stylesheet" href="css/columns.css" />
+    <link rel="stylesheet" href="css/ionicons.css" />
 </head>
 <body>
     <div id="wrap">
@@ -18,42 +20,109 @@
         </header>
             
         <section>
-            <h2>Section 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing <a href="#">elit</a>. Cras auctor erat a sagittis volutpat. Aliquam congue sollicitudin libero a imperdiet. Nam eget interdum lacus. Nullam ante ligula, accumsan eu fringilla vitae, dictum nec libero. Cras at volutpat sem, eu adipiscing nisi. Sed molestie nec nisi eu facilisis. Nam malesuada lorem sed velit bibendum consectetur. Maecenas faucibus odio a eros fermentum sollicitudin. Ut faucibus mi in elit accumsan ullamcorper et dictum tellus. Morbi id risus sem.</p>
-            <p>Praesent ultrices non ligula sit amet aliquam. In nec enim consequat urna varius tincidunt. Nunc sit amet leo non felis accumsan tempus ac sed arcu. Etiam volutpat nec velit non fermentum. Nullam at faucibus tellus. Duis non adipiscing quam, a venenatis ipsum. Etiam eget nisl iaculis, blandit elit vulputate, sagittis enim. Phasellus et dictum risus. Fusce augue arcu, dictum et leo sed, gravida gravida massa. Maecenas pharetra in est venenatis pulvinar. Donec neque nulla, suscipit eu velit ac, porta bibendum tellus. Nulla ultricies ante at pulvinar aliquet. Phasellus non dui sed mi auctor commodo. Mauris egestas enim id justo vestibulum consequat.</p>
-            <p>Donec eget arcu consequat ante venenatis vestibulum in a ante. Vivamus eros nibh, egestas eget lectus nec, viverra elementum risus. Aenean mauris ipsum, tincidunt id sagittis ut, sagittis et lorem. Aliquam viverra vel nunc id sagittis. Pellentesque sit amet bibendum lorem, eget tempor metus. Mauris posuere purus eu justo congue, quis volutpat metus gravida. Vestibulum sed enim purus. Sed quis orci elementum, blandit nisl non, fermentum dui.</p>
-            <p>Donec ligula leo, placerat eu lobortis euismod, venenatis eu augue. Aliquam vel bibendum nisl, et aliquam augue. Mauris non ligula enim. Ut metus lacus, gravida ut condimentum nec, pulvinar vitae velit. Etiam ultrices lacinia mattis. Donec commodo sagittis elementum. Nam non turpis sagittis, dapibus elit a, cursus ipsum.</p>
-            <p>Aenean ac vestibulum ligula. Nullam dui nunc, accumsan suscipit tortor in, consectetur hendrerit erat. Duis hendrerit pretium urna in ullamcorper. In bibendum nec augue a mattis. Curabitur rutrum at ante a pellentesque. Maecenas ultricies faucibus dui, at convallis risus vestibulum consectetur. Duis egestas purus sed neque faucibus vestibulum. Nullam tincidunt egestas quam, sit amet luctus ante scelerisque vel. Suspendisse eu magna at nunc cursus mollis. Suspendisse metus elit, tincidunt vel eros et, scelerisque dictum libero. Cras volutpat, dui posuere vulputate aliquet, mi metus varius dui, ut auctor orci nisi sit amet lacus. Proin et viverra nisl. Duis malesuada molestie ipsum, vel laoreet libero elementum ut. Nullam malesuada varius mi quis fermentum.</p>
+            <h2>Preview at Different Widths</h2>
+            <p>
+                This template has only been tested in Chrome 30, Internet Explorer 10, and Firefox
+                22 & 25. The following screen shots are in Chrome 30.
+            </p>
+            <p>
+                Single column width for narrow views.
+                <img src="images/default-single-column-preview.png" alt="single column preview">
+            </p>
+            <p>
+                Two columns display on most standard desktop resolutions.
+                <img src="images/default-double-column-preview.png" alt="double column preview">
+            </p>
+            <p>
+                Triple columns will show up for the majority of wide screen monitors when the 
+                browser is maximized.
+                <img src="images/default-triple-column-preview.png" alt="triple column preview">
+            </p>
+            <p>
+                Quadruple columns won't show up for many, but it's there if needed. Most of us can
+                only see it by zooming out (crtl + mouse wheel for most browsers).
+                <img src="images/default-quadruple-column-preview.png" alt="quadruple column preview">
+            </p>
         </section>
+        
         <section>
-            <h2>Section 2</h2>
-            <p><a href="#">Lorem ipsum</a> dolor sit amet, consectetur adipiscing elit. Cras auctor erat a sagittis volutpat. Aliquam congue sollicitudin libero a imperdiet. Nam eget interdum lacus. Nullam ante ligula, accumsan eu fringilla vitae, dictum nec libero. Cras at volutpat sem, eu adipiscing nisi. Sed molestie nec nisi eu facilisis. Nam malesuada lorem sed velit bibendum consectetur. Maecenas faucibus odio a eros fermentum sollicitudin. Ut faucibus mi in elit accumsan ullamcorper et dictum tellus. Morbi id risus sem.</p>
-            <p>Donec eget arcu consequat ante venenatis vestibulum in a ante. Vivamus eros nibh, egestas eget lectus nec, viverra elementum risus. Aenean mauris ipsum, tincidunt id sagittis ut, sagittis et lorem. Aliquam viverra vel nunc id sagittis. Pellentesque sit amet bibendum lorem, eget tempor metus. Mauris posuere purus eu justo congue, quis volutpat metus gravida. Vestibulum sed enim purus. Sed quis orci elementum, blandit nisl non, fermentum dui.</p>
+            <h2>Alternative Stylesheets</h2>
+            <p>
+                There is an alternative style sheet that uses a silver and orange color scheme
+                called silvange.css (clever right?). <span id="changecss">Click here</span> to
+                toggle between the stylesheets.
+                <img src="images/silvange-preview.png" alt="silvange stylesheet preview">
+            </p>
+            <p>
+                I may add other stylesheets in the future to play with new ideas.
+            </p>
         </section>
+        
         <section>
-            <h2>Section 3</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor erat a sagittis volutpat. Aliquam congue sollicitudin libero a imperdiet. Nam eget interdum lacus. Nullam ante ligula, accumsan eu fringilla vitae, dictum nec libero. Cras at volutpat sem, eu adipiscing nisi. Sed molestie nec nisi eu facilisis. Nam malesuada lorem sed velit bibendum consectetur. Maecenas faucibus odio a eros fermentum sollicitudin. Ut faucibus mi in elit accumsan ullamcorper et dictum tellus. Morbi id risus sem.</p>
-            <p>Praesent ultrices non ligula sit amet aliquam. In nec enim consequat urna varius tincidunt. Nunc sit amet leo non felis accumsan tempus ac sed arcu. Etiam volutpat nec velit non fermentum. Nullam at faucibus tellus. Duis non adipiscing quam, a venenatis ipsum. Etiam eget nisl iaculis, blandit elit vulputate, sagittis enim. Phasellus et dictum risus. Fusce augue arcu, dictum et leo sed, gravida gravida massa. Maecenas pharetra in est venenatis pulvinar. Donec neque nulla, suscipit eu velit ac, porta bibendum tellus. Nulla ultricies ante at pulvinar aliquet. Phasellus non dui sed mi auctor commodo. Mauris egestas enim id justo vestibulum consequat.</p>
-            <p>Aenean ac vestibulum ligula. Nullam dui nunc, accumsan suscipit tortor in, consectetur hendrerit erat. Duis hendrerit pretium urna in ullamcorper. In bibendum nec augue a mattis. Curabitur rutrum at ante a pellentesque. Maecenas ultricies faucibus dui, at convallis risus vestibulum consectetur. Duis egestas purus sed neque faucibus vestibulum. Nullam tincidunt egestas quam, sit amet luctus ante scelerisque vel. Suspendisse eu magna at nunc cursus mollis. Suspendisse metus elit, tincidunt vel eros et, scelerisque dictum libero. Cras volutpat, dui posuere vulputate aliquet, mi metus varius dui, ut auctor orci nisi sit amet lacus. Proin et viverra nisl. Duis malesuada molestie ipsum, vel laoreet libero elementum ut. Nullam malesuada varius mi quis fermentum.</p>
+            <h2>Guidelines</h2>
+            <p>
+                I wanted to create a simple and clean template that made use of some newer html5 
+                features I've never had the opportunity to play with. It turned out to be a lot more
+                fun than I anticipated, so I kept going with it.
+            </p>
+            <p>
+                I've also decided to use this little project as a way to practice my web design 
+                skills, which are notably lacking due to my focus on development.
+            </p>
+            <ul>
+                <li><a href="http://caniuse.com/#feat=html5semantic">Semantic Elements</a></li>
+                <ul>
+                    <li>header</li>
+                    <li>nav</li>
+                    <li>section</li>
+                    <li>footer</li>
+                </ul>
+                <li><a href="http://caniuse.com/#feat=viewport-units">View Port Units</a></li>
+                <li><a href="http://caniuse.com/#feat=css-mediaqueries">Media Queries</a></li>
+                <li><a href="http://caniuse.com/#feat=css-gradients">Gradients</a></li>
+            </ul>
+            <p>
+                There is little use of JavaScript. In fact it is only used to swap the stylesheets,
+                and there are no libraries used. In the future I may add jQuery and have useful
+                menu items.
+            <p>
         </section>
+
         <section>
-            <h2>Section 4</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor erat a sagittis volutpat. Aliquam congue sollicitudin libero a imperdiet. Nam eget interdum lacus. Nullam ante ligula, accumsan eu fringilla vitae, dictum nec libero. Cras at volutpat sem, eu adipiscing nisi. Sed molestie nec nisi eu facilisis. Nam malesuada lorem sed velit bibendum consectetur. Maecenas faucibus odio a eros fermentum sollicitudin. Ut faucibus mi in elit accumsan ullamcorper et dictum tellus. Morbi id risus sem.</p>
-            <p>Praesent ultrices non ligula sit amet aliquam. In nec enim consequat urna varius tincidunt. Nunc sit amet leo non felis accumsan tempus ac sed arcu. Etiam volutpat nec velit non fermentum. Nullam at faucibus tellus. Duis non adipiscing quam, a venenatis ipsum. Etiam eget nisl iaculis, blandit elit vulputate, sagittis enim. Phasellus et dictum risus. Fusce augue arcu, dictum et leo sed, gravida gravida massa. Maecenas pharetra in est venenatis pulvinar. Donec neque nulla, suscipit eu velit ac, porta bibendum tellus. Nulla ultricies ante at pulvinar aliquet. Phasellus non dui sed mi auctor commodo. Mauris egestas enim id justo vestibulum consequat.</p>
-            <p>Donec eget arcu consequat ante venenatis vestibulum in a ante. Vivamus eros nibh, egestas eget lectus nec, viverra elementum risus. Aenean mauris ipsum, tincidunt id sagittis ut, sagittis et lorem. Aliquam viverra vel nunc id sagittis. Pellentesque sit amet bibendum lorem, eget tempor metus. Mauris posuere purus eu justo congue, quis volutpat metus gravida. Vestibulum sed enim purus. Sed quis orci elementum, blandit nisl non, fermentum dui.</p>
-            <p>Donec ligula leo, placerat eu lobortis euismod, venenatis eu augue. Aliquam vel bibendum nisl, et aliquam augue. Mauris non ligula enim. Ut metus lacus, gravida ut condimentum nec, pulvinar vitae velit. Etiam ultrices lacinia mattis. Donec commodo sagittis elementum. Nam non turpis sagittis, dapibus elit a, cursus ipsum.</p>
-            <p>Aenean ac vestibulum ligula. Nullam dui nunc, accumsan suscipit tortor in, consectetur hendrerit erat. Duis hendrerit pretium urna in ullamcorper. In bibendum nec augue a mattis. Curabitur rutrum at ante a pellentesque. Maecenas ultricies faucibus dui, at convallis risus vestibulum consectetur. Duis egestas purus sed neque faucibus vestibulum. Nullam tincidunt egestas quam, sit amet luctus ante scelerisque vel. Suspendisse eu magna at nunc cursus mollis. Suspendisse metus elit, tincidunt vel eros et, scelerisque dictum libero. Cras volutpat, dui posuere vulputate aliquet, mi metus varius dui, ut auctor orci nisi sit amet lacus. Proin et viverra nisl. Duis malesuada molestie ipsum, vel laoreet libero elementum ut. Nullam malesuada varius mi quis fermentum.</p>
+            <h2>Credits</h2>
+            <p>
+                I must give credit where it is due. Here is a list of links that helped me make this
+                template.
+            </p>
+            <ul>
+                <li><a href="http://www.cssstickyfooter.com/">CSS Sticky Footer</a></li>
+                <li><a href="http://stackoverflow.com/a/6348597/2219970">A stackoverflow.com comment</a></li>
+                <li><a href="http://ionicons.com/">iosnicons</a></li>
+            </ul>
         </section>
+
         <section>
-            <h2>Section 5</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras auctor erat a sagittis volutpat. Aliquam congue sollicitudin libero a imperdiet. Nam eget interdum lacus. Nullam ante ligula, accumsan eu fringilla vitae, dictum nec libero. Cras at volutpat sem, eu adipiscing nisi. Sed molestie nec nisi eu facilisis. Nam malesuada lorem sed velit bibendum consectetur. Maecenas faucibus odio a eros fermentum sollicitudin. Ut faucibus mi in elit accumsan ullamcorper et dictum tellus. Morbi id risus sem.</p>
-            <p>Praesent ultrices non ligula sit amet aliquam. In nec enim consequat urna varius tincidunt. Nunc sit amet leo non felis accumsan tempus ac sed arcu. Etiam volutpat nec velit non fermentum. Nullam at faucibus tellus. Duis non adipiscing quam, a venenatis ipsum. Etiam eget nisl iaculis, blandit elit vulputate, sagittis enim. Phasellus et dictum risus. Fusce augue arcu, dictum et leo sed, gravida gravida massa. Maecenas pharetra in est venenatis pulvinar. Donec neque nulla, suscipit eu velit ac, porta bibendum tellus. Nulla ultricies ante at pulvinar aliquet. Phasellus non dui sed mi auctor commodo. Mauris egestas enim id justo vestibulum consequat.</p>
-            <p>Donec ligula leo, placerat eu lobortis euismod, venenatis eu augue. Aliquam vel bibendum nisl, et aliquam augue. Mauris non ligula enim. Ut metus lacus, gravida ut condimentum nec, pulvinar vitae velit. Etiam ultrices lacinia mattis. Donec commodo sagittis elementum. Nam non turpis sagittis, dapibus elit a, cursus ipsum.</p>
-            <p>Aenean ac vestibulum ligula. Nullam dui nunc, accumsan suscipit tortor in, consectetur hendrerit erat. Duis hendrerit pretium urna in ullamcorper. In bibendum nec augue a mattis. Curabitur rutrum at ante a pellentesque. Maecenas ultricies faucibus dui, at convallis risus vestibulum consectetur. Duis egestas purus sed neque faucibus vestibulum. Nullam tincidunt egestas quam, sit amet luctus ante scelerisque vel. Suspendisse eu magna at nunc cursus mollis. Suspendisse metus elit, tincidunt vel eros et, scelerisque dictum libero. Cras volutpat, dui posuere vulputate aliquet, mi metus varius dui, ut auctor orci nisi sit amet lacus. Proin et viverra nisl. Duis malesuada molestie ipsum, vel laoreet libero elementum ut. Nullam malesuada varius mi quis fermentum.</p>
+            <h2>About the Author</h2>
+            <p>
+                My name is <a href="http://jamespryor.net">James Pryor</a> and I like to play sudoku
+                on extreme so the game will last days. I am also an aspiring web developer and
+                computer science enthusiast.
+            </p>
+            <p id="contact">
+                <a class="icon-ios7-email-outline" href="mailto:james@geekwagon.net"></a>
+                <a class="icon-social-facebook-outline" href="https://www.facebook.com/deplicator"></a>
+                <a class="icon-social-github-outline" href="https://github.com/deplicator"></a>
+                <a class="icon-social-googleplus-outline" href="https://plus.google.com/100479632575151546186"></a>
+                <a class="icon-social-linkedin-outline" href="https://github.com/deplicator"></a>
+            </p>
         </section>
     </div>
+    
     <footer>
-        <p>sticks to bottom if there is no content</p>
+        <p>this footer sticks to bottom if there is no content</p>
     </footer>
+    
+    <script src="scripts/swapcss.js"></script>
+    
 </body>
 </html>

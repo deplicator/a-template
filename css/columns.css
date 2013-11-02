@@ -1,0 +1,66 @@
+/*
+    Stylesheet for columns at different widths.
+*/
+
+/* Single column for anything less than ~896px */
+/* For two columns, between ~896px and ~1600px */
+@media all and (min-width: 56em) and (max-width: 100em) {
+    section {
+        float: left;
+        padding: 10px 2vw 10px 1vw;
+        width: 37vw;
+    }
+
+    section:nth-child(even) {
+        clear: both;
+        padding: 10px 1vw 10px 2vw;
+    }
+    
+    section img {
+        width: 32vw;
+    }
+}
+
+/* For three columns, between ~1600px and a lot of px */
+@media all and (min-width: 100.1em) and (max-width: 143em) {
+    section {
+        float: left;
+        padding: 10px 0.9166vw;
+        width: 24.2222vw;
+    }
+    
+    section:nth-child(3n-1) {
+        clear: both;
+        padding: 10px 0.9167vw 10px 1.8333vw;
+    }
+    
+    section:nth-child(3n+1) {
+        padding: 10px 1.8333vw 10px 0.9167vw;
+    }
+    
+    section img {
+        width: 22vw;
+    }
+}
+
+/* For four columns, over a lot of px */
+@media all and (min-width: 143.1em) {
+    section {
+        float: left;
+        max-width: 625px;
+        padding: 10px 0.375vw;
+        width: 19.0625vw;
+    }
+    section:nth-child(4n-2) {
+        clear: both;
+        padding: 10px 0.375vw 10px 0.75vw;
+    }
+    
+    section:nth-child(4n+1) {
+        padding: 10px 0.75vw 10px 0.375vw;
+    }
+    
+     section img {
+        width: 18vw;
+    }
+}
